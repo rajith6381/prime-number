@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="inp" value="">
+
+    <h1 id="out"></h1>
+    <button onclick="myFunction()">click</button>
+    <script>
+
+      function myFunction()
+    {
+	let no = document.getElementById("inp").value;
+	let prt=document.getElementById("out");
+	  for(value=1;value<no;value++)
+		{
+		  if(value%2==0||value%3==0||value%5==0)
+		  {
+			if(value==2||value==3||value==5){
+			prt.innerHTML = value+"<br>";
+			}
+			else{
+			}
+		  }
+		  else{
+		  prt.innerHTML = value+"<br>";
+		  }
+		}
+    }
+
+
+</script>
+</body>
+</html>
